@@ -1,0 +1,38 @@
+services:
+  # Base de datos
+  db:
+    image: mongo:6
+    container_name: ayudaya_db
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    restart: always
+
+  # Backend
+  api:
+    image: node:18-alpine
+    container_name: ayudaya_api
+    working_dir: /app
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./db.json:/app/db.json
+    command: sh -c "npm install -g json-server && json-server --watch db.json --host 0.0.0.0 --port 3001"
+    restart: always
+
+  # Frontend
+  frontend:
+    build: .
+    container_name: ayudaya_frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    depends_on:
+      - api
+    restart: always
+
+volumes:
+  mongo_data:

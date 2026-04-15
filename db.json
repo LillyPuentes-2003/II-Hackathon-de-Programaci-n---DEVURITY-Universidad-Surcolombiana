@@ -1,0 +1,50 @@
+{
+  "requests": [
+    {
+      "id": "REQ-001",
+      "userId": "u1",
+      "userName": "María García",
+      "type": "alimentos",
+      "description": "Necesitamos víveres para 3 familias en situación de calle.",
+      "location": "Centro, Neiva",
+      "lat": 2.9273,
+      "lng": -75.2819,
+      "urgency": "alta",
+      "peopleAffected": 12,
+      "status": "pendiente",
+      "timestamp": 1744000000000
+    },
+    {
+      "id": "REQ-002",
+      "userId": "u2",
+      "userName": "Juan Pérez",
+      "type": "salud",
+      "description": "Se requiere insulina para adulto mayor.",
+      "location": "Barrio Miraflores, Neiva",
+      "lat": 2.9350,
+      "lng": -75.2900,
+      "urgency": "alta",
+      "peopleAffected": 1,
+      "status": "asignada",
+      "assignedTo": "v1",
+      "assignedName": "Carlos Voluntario",
+      "timestamp": 1744000000000
+    },
+    {
+      "id": "REQ-003",
+      "userId": "u3",
+      "userName": "Elena R.",
+      "type": "transporte",
+      "description": "Traslado urgente a centro médico para control prenatal.",
+      "location": "Barrio Quirinal, Neiva",
+      "lat": 2.9200,
+      "lng": -75.2750,
+      "urgency": "media",
+      "peopleAffected": 2,
+      "status": "en-camino",
+      "timestamp": 1744000000000
+    }
+  ],
+  "offers": [],
+  "users": []
+}
