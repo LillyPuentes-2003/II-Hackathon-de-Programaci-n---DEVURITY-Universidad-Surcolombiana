@@ -46,5 +46,28 @@
     }
   ],
   "offers": [],
-  "users": []
+  "users": [],
+  "donations": [
+    {
+      "id": "DON-001",
+      "userName": "Carlos Méndez",
+      "type": "alimentos",
+      "location": "Centro, Neiva",
+      "timestamp": 1744000000000
+    },
+    {
+      "id": "DON-002",
+      "userName": "Laura Torres",
+      "type": "salud",
+      "location": "Barrio Miraflores, Neiva",
+      "timestamp": 1744001000000
+    },
+    {
+      "id": "DON-003",
+      "userName": "Carlos Méndez",
+      "type": "alimentos",
+      "location": "Centro, Neiva",
+      "timestamp": 1744002000000
+    }
+  ]
 }
